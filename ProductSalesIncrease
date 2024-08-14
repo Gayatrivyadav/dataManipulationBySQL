@@ -1,0 +1,16 @@
+create database assignment;
+use assignment;
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+
+INSERT INTO products (name, price) VALUES
+('Product 1', 10.99),('Product 2', 15.49),('Product 3', 7.99),
+('Product 4', 12.99),('Product 5', 19.99),('Product 6', 9.49),('Product 7', 5.99),('Product 8', 22.99),('Product 9', 8.49),('Product 10', 14.99),
+('Product 11', 6.99),('Product 12', 17.99),('Product 13', 20.49),('Product 14', 11.49),('Product 15', 13.99),('Product 16', 18.99),
+('Product 17', 21.49),('Product 18', 7.49),('Product 19', 16.99),('Product 20', 23.99),('Product 21', 12.49),('Product 22', 10.49),
+('Product 23', 25.99),('Product 24', 14.49),('Product 25', 19.49),('Product 26', 8.99),('Product 27', 13.49),('Product 28', 22.49),('Product 29', 17.49),('Product 30', 11.99);
+
+select name, price * 1.1 as new_price from products;
